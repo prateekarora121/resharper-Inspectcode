@@ -1,11 +1,16 @@
-InspectCode docker action
-This action executes JetBrains' Resharper InspectCode CLI utility, and writes the output to report.xml
+# InspectCode docker action
 
-Inputs
-solution
-Required Path to your solution file, ex: MyProject.sln
+This action executes JetBrains' Resharper InspectCode CLI utility, and writes the output to `report.xml`
 
-Example Usage:
+## Inputs
+
+### `solution`
+
+**Required** Path to your solution file, ex: `MyProject.sln`
+
+## Example Usage:
+
+```
 name: InspectMaster
 
 on:
@@ -23,3 +28,4 @@ jobs:
        uses: nbadal/inspectcode-action
        with:
           solution: './MyProject.sln'
+```
