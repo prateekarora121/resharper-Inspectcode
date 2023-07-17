@@ -10,6 +10,7 @@ This action executes JetBrains' Resharper InspectCode CLI utility, and writes th
 
 ## Example Usage:
 
+
 ```
 name: InspectMaster
 
